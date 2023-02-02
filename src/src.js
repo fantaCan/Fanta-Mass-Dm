@@ -181,18 +181,17 @@ module.exports = class {
     async start(content){
         await this.getFriends();
         let friendCount = this.friendIds.length;
+        
         // Open Friend Dms
-        for ( var x = 0; x < friendCount; x++){
-            process.title = `Opening Dms || ${x}/${this.friendIds.length}`;
+        for (let x = 0; x < friendCount; x++){
+            process.title = `Opening Dms || ${x + 1}/${friendCount}`;
             let friend = this.friendIds[x];
             await this.openDm(friend);
             await this.sleep(200);
-            if( x == friendCount - 1) {
-                await this.sleep(1000);
-                await this.closeEmptyDms(content)
-            }
         }
-
+        
+        await this.sleep(1000);
+        await this.closeEmptyDms(content);
 
     }
 }
