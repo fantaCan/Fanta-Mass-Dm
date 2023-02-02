@@ -169,13 +169,9 @@ module.exports = class {
             await this.sendContent(dms[i], randomMessage);
             await this.sleep(1000);
             if((i + 1) % 10 === 0 ){
-                typeof timeoutPer10Dms == "number" ? (async () => {
-                    process.title = `Sleeping... ${timeoutPer10Dms}s`; 
-                    await this.sleep(timeoutPer10Dms * 1000);
-                }) () : (async () => {
-                    process.title = `Sleeping... 5s`; 
-                    await this.sleep(5000);
-                }) ();
+                const sleepTime = typeof timeoutPer10Dms == "number" ? timeoutPer10Dms * 1000 : 5000;
+                process.title = `Sleeping... ${sleepTime / 1000}s`; 
+                await this.sleep(sleepTime);
             }
             if (i == dmsLength - 1){
                 console.log("Mass Dm complete!");
