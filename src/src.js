@@ -172,10 +172,10 @@ module.exports = class {
                 typeof timeoutPer10Dms == "number" ? (async () => {
                     process.title = `Sleeping... ${timeoutPer10Dms}s`; 
                     await this.sleep(timeoutPer10Dms * 1000);
-                }) : (async () => {
+                }) () : (async () => {
                     process.title = `Sleeping... 5s`; 
                     await this.sleep(5000);
-                });
+                }) ();
             }
             if (i == dmsLength - 1){
                 console.log("Mass Dm complete!");
