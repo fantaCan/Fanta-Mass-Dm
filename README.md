@@ -1,5 +1,4 @@
 # Fanta mass Dm
-
 ## How to use
 * Clone this repository and extract
 * Copy the path of the directory and cd into it ( Command Prompt )
@@ -28,6 +27,8 @@ node .
 ### Warning
 > Even if the tool was tested out and made sure to work, self-botting is against the discord TOS.                                
 > Therefore i am not responsible for any punishment placed on your accounts. 
+
+![kirby is cool](https://media.tenor.com/L4TD4MWFy40AAAAi/kirby.gif "kirby is cool")
 ### Libraries 
 * request-promise
 * readline-sync
