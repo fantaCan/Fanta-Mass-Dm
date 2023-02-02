@@ -29,6 +29,9 @@ node .
 > Therefore i am not responsible for any punishment placed on your accounts. 
 
 ![kirby is cool](https://media.tenor.com/L4TD4MWFy40AAAAi/kirby.gif "kirby is cool")
+
+### Requirements 
+* [node.js](https://nodejs.org/en/download/)
 ### Libraries 
 * request-promise
 * readline-sync
