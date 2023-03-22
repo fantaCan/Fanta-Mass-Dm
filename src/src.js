@@ -4,7 +4,6 @@ const baseUrl = "https://discord.com/api";
 
 /* 
         ||  Made by fanta#1337
-        ||  discord.gg/violence
 */
 
 module.exports = class {
